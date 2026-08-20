@@ -9,12 +9,10 @@ Find the missing skills between what you know and the job you want — and the b
 ![Graph model](images/graph.png)
 
 ## Screenshots
-![Skill selection screen](images/skillspath.png)
-![Generated roadmap](images/roadmappng)
+![Skill selection screen](images/skillpath.png)
+![Generated roadmap](images/roadmap.png)
 
 ## Why a graph database?
-
-
 Skills form chains (JavaScript → React → Redux), and jobs connect to many skills at once. Finding the
 shortest learning path between "what I know" and "what a job needs" is a multi-hop path-finding problem.
 In a relational database this needs recursive self-joins that get slow and hard to read as chains get
