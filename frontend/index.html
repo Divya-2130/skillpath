@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SkillPath — Find your learning roadmap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>SkillPath</h1>
+    <p class="subtitle">Pick what you already know and the job you want. We'll show you what to learn next.</p>
+
+    <section class="card">
+      <h2>1. Skills you already know</h2>
+      <div id="skills-list" class="skills-grid">
+        <p class="loading">Loading skills...</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2. Target job</h2>
+      <select id="job-select">
+        <option value="">Loading jobs...</option>
+      </select>
+    </section>
+
+    <button id="generate-btn">Generate Roadmap</button>
+
+    <section id="result" class="card result hidden"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

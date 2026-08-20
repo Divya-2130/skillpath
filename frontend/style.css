@@ -1,0 +1,62 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  color: #1f2430;
+}
+
+.container {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 { margin-bottom: 4px; }
+.subtitle { color: #666; margin-top: 0; }
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+label { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+
+select, button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2f6feb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover { background: #255bc4; }
+button:disabled { background: #a9b8d9; cursor: not-allowed; }
+
+.result.hidden { display: none; }
+
+.step {
+  padding: 10px;
+  margin: 6px 0;
+  background: #eef3ff;
+  border-left: 4px solid #2f6feb;
+  border-radius: 4px;
+}
+
+.error { color: #c0392b; }
+.loading { color: #888; font-style: italic; }
