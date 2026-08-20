@@ -1,8 +1,19 @@
 # SkillPath
 
 Find the missing skills between what you know and the job you want — and the best order to learn them.
+## Live Demo
+- App: https://serene-faun-1bec62.netlify.app
+- API: https://skillpath-1eex.onrender.com
+
+## Data Model (from CognoDB)
+![Graph model](images/graph.png)
+
+## Screenshots
+![Skill selection screen](images/skillspath.png)
+![Generated roadmap](images/roadmappng)
 
 ## Why a graph database?
+
 
 Skills form chains (JavaScript → React → Redux), and jobs connect to many skills at once. Finding the
 shortest learning path between "what I know" and "what a job needs" is a multi-hop path-finding problem.
@@ -54,4 +65,4 @@ skillpath/
 1. Finds which of the job's required skills the user doesn't already know.
 2. Runs `shortestPath()` from each known skill to each missing skill, following `PREREQUISITE_OF`
    relationships up to 6 hops.
-3. Flattens the chains into one ordered, de-duplicated list — the roadmap.
+3. Flattens the chains into one ordered, de-duplicated list — the roadmap. 
