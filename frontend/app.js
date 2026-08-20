@@ -1,7 +1,7 @@
 // app.js
 // Handles all the frontend logic: loading skills/jobs, and requesting the roadmap.
 
-const API_BASE = "http://localhost:4000"; // change this after you deploy the backend
+const API_BASE = "https://skillpath-1eex.onrender.com"; // change this after you deploy the backend
 
 const skillsListEl = document.getElementById("skills-list");
 const jobSelectEl = document.getElementById("job-select");
